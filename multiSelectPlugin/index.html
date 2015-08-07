@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>下拉框</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/select.css" rel="stylesheet" type="text/css">
+    <style>
+        body{
+            padding: 0;
+            min-height: 1000px;
+        }
+        h3{
+            padding: 5px 0;
+        }
+        section{
+            border: 1px solid lightgray;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .zg_icon_right {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: url("images/sprites/dropArrow.png") no-repeat;
+            background-position: -14px -23px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 90%; margin: 0 auto;">
+    <section>
+        <h3>多级下拉框</h3>
+        <span id="s1"></span>
+    </section>
+    <section>
+        <h3>禁用下拉框</h3>
+        <span id="s2"></span>
+    </section>
+</div>
+
+<script src="js/bower_components/jquery/dist/jquery.js"></script>
+<script src="js/lib/lex.js"></script>
+<script src="js/plugin/multiSelection.js"></script>
+<script>
+    /*普通下拉框*/
+    (function(){
+        $("#s1").multiSelectList({
+            data : [
+                {
+                    id : 1,
+                    name : 'hqq',
+                    age : 22,
+                    child : [
+                        {
+                            id : 11,
+                            name : 'hh',
+                            age : 2,
+                            child : [
+                                {
+                                    id : 111,
+                                    name : '第三层',
+                                    child : [
+                                        {
+                                            id : 1111,
+                                            name : '第四层',
+                                            child : [
+                                                {
+                                                    id : 11111,
+                                                    name : '第5层'
+                                                },
+                                                {
+                                                    id : 11112,
+                                                    name : '第5层'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            id : 1112,
+                                            name : 'hi'
+                                        }
+                                    ]
+                                },
+                                {
+                                    id : 112,
+                                    name : '111',
+                                    child : [
+                                        {
+                                            id : 1121,
+                                            name : 'my name is hqq'
+                                        },
+                                        {
+                                            id : 1122,
+                                            name : 'hello everyone'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id : 12,
+                            name : 'qq',
+                            age : 3
+                        }
+                    ]
+                },
+                {
+                    id : 2,
+                    name : 'xxf',
+                    age : 23,
+                    child : [
+                        {
+                            id : 21,
+                            name : 'you',
+                            age : 2
+                        },
+                        {
+                            id : 22,
+                            name : 'are you know',
+                            age : 3
+                        }
+                    ]
+                }
+            ],
+            fieldName: 'name'
+        });
+    })();
+    /*禁用下拉框*/
+    (function(){
+        $("#s2").multiSelectList({
+            data: [
+                {age: '11', name : 'qq', djf : 'asdf'},
+                {age: '12', name : 'qq'}
+            ],
+            editable: true,
+            fieldName: 'age',
+            showArrow : true,
+            enable : false
+        })
+    })();
+</script>
+</body>
+</html>
