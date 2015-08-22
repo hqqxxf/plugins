@@ -1,0 +1,407 @@
+{
+  "type": "snapshot_response",
+  "payload": {
+    "activities": [
+      {
+        "activity": "com.zhuge.viewdemo.MainActivity",
+        "scale": 0.5,
+        "serialized_objects": {
+          "rootObject": 620708941,
+          "objects": [
+            {
+              "hashCode": 620708941,
+              "id": -1,
+              "mp_id_name": null,
+              "contentDescription": null,
+              "tag": null,
+              "top": 0,
+              "left": 0,
+              "width": 720,
+              "height": 1280,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "com.android.internal.policy.impl.PhoneWindow.DecorView",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View"
+              ],
+              "importantForAccessibility": true,
+              "clickable": false,
+              "alpha": 1.0,
+              "hidden": 0,
+              "background": {
+                "classes": [
+                  "android.graphics.drawable.ColorDrawable",
+                  "android.graphics.drawable.Drawable"
+                ],
+                "dimensions": {
+                  "left": 0,
+                  "right": 720,
+                  "top": 0,
+                  "bottom": 1280
+                },
+                "color": -1118482
+              },
+              "subviews": [
+                998484058,
+                66472587
+              ]
+            },
+            {
+              "hashCode": 998484058,
+              "id": -1,
+              "mp_id_name": null,
+              "contentDescription": null,
+              "tag": null,
+              "top": 0,
+              "left": 0,
+              "width": 720,
+              "height": 1280,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View"
+              ],
+              "importantForAccessibility": false,
+              "clickable": false,
+              "alpha": 1.0,
+              "hidden": 0,
+              "subviews": [
+                952365094,
+                33358951
+              ]
+            },
+            {
+              "hashCode": 952365094,
+              "id": 16909170,
+              "mp_id_name": null,
+              "contentDescription": null,
+              "tag": null,
+              "top": 0,
+              "left": 0,
+              "width": 0,
+              "height": 0,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 8,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.view.ViewStub",
+                "android.view.View"
+              ],
+              "importantForAccessibility": false,
+              "clickable": false,
+              "alpha": 1.0,
+              "hidden": 8,
+              "subviews": []
+            },
+            {
+              "hashCode": 33358951,
+              "id": 16908290,
+              "mp_id_name": "android:content",
+              "contentDescription": null,
+              "tag": null,
+              "top": 50,
+              "left": 0,
+              "width": 720,
+              "height": 1230,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View"
+              ],
+              "importantForAccessibility": false,
+              "clickable": false,
+              "alpha": 1.0,
+              "hidden": 0,
+              "subviews": [
+                74377394
+              ]
+            },
+            {
+              "hashCode": 74377394,
+              "id": -1,
+              "mp_id_name": null,
+              "contentDescription": null,
+              "tag": null,
+              "top": 0,
+              "left": 0,
+              "width": 720,
+              "height": 1230,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.widget.RelativeLayout",
+                "android.view.ViewGroup",
+                "android.view.View"
+              ],
+              "importantForAccessibility": false,
+              "clickable": false,
+              "alpha": 1.0,
+              "hidden": 0,
+              "subviews": [
+                456877497,
+                392093182,
+                192682335
+              ]
+            },
+            {
+              "hashCode": 456877497,
+              "id": 2131558502,
+              "mp_id_name": "bt",
+              "contentDescription": null,
+              "tag": null,
+              "top": 32,
+              "left": 32,
+              "width": 176,
+              "height": 96,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View"
+              ],
+              "importantForAccessibility": true,
+              "clickable": true,
+              "alpha": 1.0,
+              "hidden": 0,
+              "background": {
+                "classes": [
+                  "android.graphics.drawable.RippleDrawable",
+                  "android.graphics.drawable.LayerDrawable",
+                  "android.graphics.drawable.Drawable"
+                ],
+                "dimensions": {
+                  "left": 0,
+                  "right": 176,
+                  "top": 0,
+                  "bottom": 96
+                }
+              },
+              "text": "截图",
+              "textColor": -570425344,
+              "fontSize": 28.0,
+              "layoutRules": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "subviews": []
+            },
+            {
+              "hashCode": 392093182,
+              "id": -1,
+              "mp_id_name": null,
+              "contentDescription": null,
+              "tag": null,
+              "top": 32,
+              "left": 208,
+              "width": 176,
+              "height": 96,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View"
+              ],
+              "importantForAccessibility": true,
+              "clickable": true,
+              "alpha": 1.0,
+              "hidden": 0,
+              "background": {
+                "classes": [
+                  "android.graphics.drawable.RippleDrawable",
+                  "android.graphics.drawable.LayerDrawable",
+                  "android.graphics.drawable.Drawable"
+                ],
+                "dimensions": {
+                  "left": 0,
+                  "right": 176,
+                  "top": 0,
+                  "bottom": 96
+                }
+              },
+              "text": "view1",
+              "textColor": -570425344,
+              "fontSize": 28.0,
+              "layoutRules": [
+                0,
+                2131558502,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "subviews": []
+            },
+            {
+              "hashCode": 192682335,
+              "id": 2131558503,
+              "mp_id_name": "et",
+              "contentDescription": null,
+              "tag": null,
+              "top": 128,
+              "left": 32,
+              "width": 266,
+              "height": 83,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.widget.EditText",
+                "android.widget.TextView",
+                "android.view.View"
+              ],
+              "importantForAccessibility": true,
+              "clickable": true,
+              "alpha": 1.0,
+              "hidden": 0,
+              "background": {
+                "classes": [
+                  "android.graphics.drawable.InsetDrawable",
+                  "android.graphics.drawable.Drawable"
+                ],
+                "dimensions": {
+                  "left": 0,
+                  "right": 266,
+                  "top": 0,
+                  "bottom": 83
+                }
+              },
+              "text": "",
+              "textColor": -570425344,
+              "fontSize": 36.0,
+              "layoutRules": [
+                0,
+                0,
+                0,
+                2131558502,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "subviews": []
+            },
+            {
+              "hashCode": 66472587,
+              "id": 16908335,
+              "mp_id_name": "android:statusBarBackground",
+              "contentDescription": null,
+              "tag": null,
+              "top": 0,
+              "left": 0,
+              "width": 720,
+              "height": 50,
+              "scrollX": 0,
+              "scrollY": 0,
+              "visibility": 0,
+              "translationX": 0.0,
+              "translationY": 0.0,
+              "classes": [
+                "android.view.View"
+              ],
+              "importantForAccessibility": false,
+              "clickable": false,
+              "alpha": 1.0,
+              "hidden": 0,
+              "background": {
+                "classes": [
+                  "android.graphics.drawable.ColorDrawable",
+                  "android.graphics.drawable.Drawable"
+                ],
+                "dimensions": {
+                  "left": 0,
+                  "right": 720,
+                  "top": 0,
+                  "bottom": 50
+                },
+                "color": -16777216
+              },
+              "subviews": []
+            }
+          ]
+        },
+        "screenshot": "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hAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOIAw4QDChAMIEw4gTDiAMOEAwoQDCBMOIEw4gDDhAMKEAwgTDiBMOICw/w9tDJlnsMKzBgAAAABJRU5ErkJg"
+      }
+    ],
+    "snapshot_time_millis": 431
+  }
+}
