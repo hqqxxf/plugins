@@ -5,17 +5,19 @@
     var imageStructure = (function(){
         var res = null;
         return {
+            init: function(url){
+                ajax(url);
+            },
             setRes: function(res){
                 this.res = res;
             },
-            getRes: function(){
-                return this.res;
-            },
-            createImage: function(data){
+            createImage: function(data, oDiv){
                 var img = document.createElement('img');
                 img.src = "data:image/png;base64," + data.screenshot;
-                document.body.appendChild(img);
+                oDiv.appendChild(img);
                 img.style.position = "absolute";
+                img.style.top = 0;
+                img.style.left = 0;
             },
             getImage: function(){
                 var data = this.res.payload.activities[0],
@@ -23,25 +25,29 @@
                     rootId = data.serialized_objects.rootObject,
                     scale = data.scale,
                     root = this.getNode(objects,rootId);
-                this.createImage(data);
+
                 this.forEachNode(objects, root);
                 console.log(root);
                 var oDiv = document.createElement('div');
+                oDiv.style.width = root.width * scale + 'px';
+                oDiv.style.height = root.height * scale + 'px';
+                oDiv.style.top = root.top * scale + 'px';
+                oDiv.style.left = root.left * scale + 'px';
+                oDiv.className = "root";
+                this.createImage(data, oDiv);
                 this.createElement(root,oDiv, scale, rootId);
                 document.body.appendChild(oDiv);
             },
             createElement: function(parent, parentNode, scale, rootId){
                 if(!parent)return ;
-                    var oDiv = document.createElement('div'),arr = [];
-                    parentNode.appendChild(oDiv);
-                    oDiv.style.width = parent.width * scale + 'px';
-                    oDiv.style.height = parent.height * scale + 'px';
-                    oDiv.style.top = parent.top * scale + 'px';
-                    oDiv.style.left = parent.left * scale + 'px';
-                    parent.hashCode == rootId ? oDiv.className = "root" : oDiv.className = "node";
-                if(parent.clickable == "true"){
-                    console.log(parent.width ,parent.height);
-                }
+                var oDiv = document.createElement('div'),arr = [];
+                parentNode.appendChild(oDiv);
+                oDiv.style.width = parent.width * scale + 'px';
+                oDiv.style.height = parent.height * scale + 'px';
+                oDiv.style.top = parent.top * scale + 'px';
+                oDiv.style.left = parent.left * scale + 'px';
+                parent.importantForAccessibility ? oDiv.className = "node" : oDiv.className = "hide-node";
+
                 if(parent.child){
                     for(var i=0; i<parent.child.length; i++){
                         this.createElement(parent.child[i],oDiv, scale, rootId);
@@ -74,24 +80,17 @@
         }
     })();
 
-    function ajax(){
-        //var url = "./js/json/image.json";
-        var url = "./js/json/frames2.json";
-        getStructure(url);
-        function getStructure(url){
-            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-            xhr.open('GET', url, true);
-            xhr.send();
-            xhr.onreadystatechange = function(){
-                if(xhr.readyState == 4 && xhr.status == 200){
-                    imageStructure.setRes(JSON.parse(xhr.responseText));
-                    imageStructure.getImage();
-                }
-            };
-        }
+    function ajax(url){
+        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        xhr.open('GET', url, true);
+        xhr.send();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && xhr.status == 200){
+                imageStructure.setRes(JSON.parse(xhr.responseText));
+                imageStructure.getImage();
+            }
+        };
     }
-    function init(){
-        ajax();
-    }
-    init();
+    imageStructure.init("./js/json/frames2.json");
+    imageStructure.init("./js/json/image.json");
 })();
