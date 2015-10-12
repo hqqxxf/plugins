@@ -1,7 +1,5 @@
 /**
- * Created by yqdong on 15/9/16.
- * qq: 1013501639
- * @author yqdong
+ * Created by Administrator on 2015/10/12.
  */
 define([
 
