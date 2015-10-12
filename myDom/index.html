@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS无码布点</title>
+</head>
+<body style="overflow: auto;">
+<a href="javascript:void(0);">超级连接</a>
+<button id="btn1">按钮一</button>
+<button id="btn2">按钮二</button>
+<a class="a  b c d   e">多个class</a>
+
+<div id="div" style="margin: 3px; border: 1px solid lightcoral;">
+    <a href="#">12</a>
+    <a href="#">23</a>
+    <ul>
+        <li>
+            kdddddddd
+        </li>
+        <li>
+            ddddddddddddd
+        </li>
+    </ul>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script>
+    document.getElementById('btn1').onclick = function(){
+        console.log('属性注册');
+    };
+</script>
+<script src="lib/require.js" data-main="main"></script>
+<script src="test.js"></script>
+<script type="text/javascript">
+//        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var n=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(n?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(a,o);for(var r=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=r(p[c])};
+//        heap.load("1042145181");
+</script>
+</body>
+</html>
